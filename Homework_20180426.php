@@ -21,7 +21,7 @@ if (isset($_GET['year']) )  {
     } else if ($r1=='0') {
         $result='閏年';
     } else  {
-        $result='沒有閏年';
+        $result='沒有閏年x';
 
     }
 }
