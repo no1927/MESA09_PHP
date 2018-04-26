@@ -1,3 +1,8 @@
 <?php
-$x=$_GET['x'];
-echo $x,':',gettype($x);
+    $var1=' ';
+    if($var1) {
+        echo 'ok';
+    }
+    else {
+        echo 'xxx';
+    }
