@@ -1,6 +1,5 @@
 <!--//用 if 判斷閏年-->
 <h>請輸入西元年後按 [check] 判斷是否為閏年 V2.</h>
-<h>test</h>
 echo 'test';
 <?php
 $year="";
