@@ -7,21 +7,17 @@ $r1="";
 $r2="";
 $r3="";
 $result="";
+
 if (isset($_GET['year']) )  {
     $year=$_GET['year'];
-    $r1=$year-intval($year/4)*4;
-    $r2=$year-intval($year/100)*100;
-    $r3=$year-intval($year/400)*400;
-
-    if ($r3==0){
+    if ($year % 400==0){
         $result='閏年';
-    } else if ($r2=='0') {
+    } else if ($year % 100 =='0') {
         $result='沒有閏年';
-    } else if ($r1=='0') {
+    } else if ($year % 4=='0') {
         $result='閏年';
     } else  {
         $result='沒有閏年x';
-
     }
 }
 ?>
